@@ -1,0 +1,114 @@
+body{
+    background-color: whitesmoke;
+    color:#111;
+}
+/* Botão esquerdo*/
+.minhaSidebar1{
+    height: 100%;
+    left: 0;
+    background-color: #111;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top:0;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+.minhaSidebar1 a{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+.minhaSidebar1 a:hover{
+    color: #fff;
+}
+.minhaSidebar1 .fechar-btn1{
+    position: absolute;
+    top:0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    color:darkred;
+    background-color:transparent;
+    font-size: 30;
+}
+/*Botão direito*/
+
+.minhaSidebar2{
+    height: 100%;
+    right: 0;
+    background-color: #111;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top:0;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+.minhaSidebar2 a{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.4s;
+}
+.minhaSidebar2 a:hover{
+    color: #fff;
+}
+.minhaSidebar2 .fechar-btn2{
+    position: absolute;
+    top:0;
+    right: 25px;
+    font-size: 36px;
+    margin-right: 50px;
+    color:darkred;
+    background-color:transparent;
+    font-size: 30;
+}
+
+/* Conteudo Principal da Página */
+.container{
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction:column;
+}
+.btns{
+    display:flex;
+    align-content:center;
+    justify-content: center;
+    flex-direction: row;
+}
+.btn{
+    width: 25%;
+    height: 10%;
+    color: #111;
+    background-color: #fff ;
+    font-size: 1em;
+    border: 1px solid #111;
+    border-radius: 5px;
+}
+.btn:first-child{
+    margin-right: 15px;
+}
+.conteudoDaPagina{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+}
+/*Responsividade para dispositivos mobile*/
+@media screen and (max-height: 450px) {
+    .minhaSidebar1 {padding-top: 15px;}
+    .minhaSidebar1 a {font-size: 18px;}
+  }
+@media screen and (max-height: 450px) {
+    .minhaSidebar2 {padding-top: 15px;}
+    .minhaSidebar2 a {font-size: 18px;}
+  }
